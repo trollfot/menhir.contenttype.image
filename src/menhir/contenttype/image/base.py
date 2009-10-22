@@ -4,9 +4,10 @@ import megrok.resourcelibrary
 import dolmen.content as content
 import dolmen.app.security.content as security
 
+from dolmen.file import ImageField
 from dolmen.blob import BlobProperty
-from dolmen.imaging import ImageField
 from menhir.library.jquery import SlimBox
+
 from zope.schema import Text
 from zope.i18nmessageid import MessageFactory
 from zope.dublincore.property import DCProperty
