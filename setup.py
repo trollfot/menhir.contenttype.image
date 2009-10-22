@@ -30,7 +30,7 @@ setup(name = name,
           'dolmen.content',
           'dolmen.app.viewselector',
           'dolmen.app.security',
-          'menhir.library.jquery'
+          'menhir.library.jquery',
           'megrok.resourcelibrary',
       ],
       classifiers = [
