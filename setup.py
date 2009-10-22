@@ -25,13 +25,13 @@ setup(name = name,
       install_requires=[
           'setuptools',
           'grok',
-          'megrok.resourcelibrary',
+          'dolmen.file',
           'dolmen.blob',
           'dolmen.content',
-          'dolmen.imaging',
-          'dolmen.app.layout',
+          'dolmen.app.viewselector',
           'dolmen.app.security',
           'menhir.library.jquery'
+          'megrok.resourcelibrary',
       ],
       classifiers = [
         'Development Status :: 4 - Beta',
