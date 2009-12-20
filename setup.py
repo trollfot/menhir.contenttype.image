@@ -33,7 +33,7 @@ setup(name = name,
           'dolmen.app.security',
           'dolmen.widget.image',
           'menhir.library.jquery',
-          'megrok.resourcelibrary',
+          'megrok.resource',
       ],
       classifiers = [
         'Development Status :: 4 - Beta',
