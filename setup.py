@@ -1,14 +1,17 @@
-from setuptools import setup, find_packages
-from os.path import join
+# -*- coding: utf-8 -*-
 
-name = 'menhir.contenttype.image'
+from os.path import join
+from setuptools import setup, find_packages
+
 version = '0.1'
-readme = open("src/menhir/contenttype/image/README.txt").read()
-history = open("docs/HISTORY.txt").read()
+name = 'menhir.contenttype.image'
+
+readme = open(join('src', 'menhir', 'contenttype', 'image', 'README.txt').read()
+history = open(join("docs", "HISTORY.txt")).read()
 
 setup(name = name,
       version = version,
-      description = 'Dolmen contenttype extension : image',
+      description = 'Dolmen content-type extension : image',
       long_description = readme[readme.find('\n\n'):] + '\n' + history,
       keywords = 'Grok Zope3 CMS Dolmen',
       author = 'Souheil Chelfouh',
@@ -23,17 +26,17 @@ setup(name = name,
       platforms = 'Any',
       zip_safe = False,
       install_requires=[
-          'setuptools',
-          'grok',
-          'dolmen.file',
-          'dolmen.blob',
-          'dolmen.content',
-          'dolmen.thumbnailer',
           'dolmen.app.content',
           'dolmen.app.security',
+          'dolmen.blob',
+          'dolmen.content',
+          'dolmen.file',
+          'dolmen.thumbnailer',
           'dolmen.widget.image',
-          'menhir.library.jquery',
+          'grokcore.view',
           'megrok.resource',
+          'menhir.library.jquery',
+          'setuptools',
       ],
       classifiers = [
         'Development Status :: 4 - Beta',
