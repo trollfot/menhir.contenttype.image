@@ -6,8 +6,9 @@ from setuptools import setup, find_packages
 version = '0.1'
 name = 'menhir.contenttype.image'
 
-readme = open(join('src', 'menhir', 'contenttype', 'image', 'README.txt').read()
-history = open(join("docs", "HISTORY.txt")).read()
+history = open(join('docs', 'HISTORY.txt')).read()
+readme = open(
+    join('src', 'menhir', 'contenttype', 'image', 'README.txt')).read()
 
 setup(name = name,
       version = version,
