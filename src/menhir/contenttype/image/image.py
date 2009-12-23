@@ -3,7 +3,7 @@
 import dolmen.content as content
 import dolmen.app.security.content as security
 
-from grok import name, path
+from grok import name
 from dolmen.file import ImageField
 from dolmen.blob import BlobProperty
 

@@ -1,11 +1,13 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:grok="http://namespaces.zope.org/grok">
 
+  <include package="dolmen.content" file="meta.zcml" />
+
   <include package="dolmen.thumbnailer" />
   <include package="dolmen.app.content" />
   <include package="dolmen.widget.image" />
-  <include package="dolmen.content" file="meta.zcml" />
-  <include package="megrok.resourcelibrary" file="meta.zcml" />
+  <include package="megrok.resource"/>
+
   <grok:grok package="." />
 
 </configure>

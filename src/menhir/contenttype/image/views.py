@@ -4,7 +4,7 @@ import grokcore.view as grok
 import dolmen.app.layout as layout
 
 from megrok import resource
-from menhir.contenttype.image import IImage, popup
+from menhir.contenttype.image import IImage, ImagePopup
 from zope.size import byteDisplay
 from zope.traversing.browser.absoluteurl import absoluteURL
 
@@ -13,7 +13,7 @@ class ImageView(layout.Index):
     """Default view for an image.
     """
     grok.context(IImage)
-    resource.include(popup)
+    resource.include(ImagePopup)
     
     def update(self):
         url = absoluteURL(self.context, self.request)

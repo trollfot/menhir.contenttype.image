@@ -5,9 +5,7 @@ from megrok import resource
 from menhir.library.jquery import slimbox
 
 
-class ImagePopup(resource.Library):
+class ImagePopup(resource.ResourceLibrary):
     resource.path('resources')
     resource.name("image.popup")
-
-popup = resource.ResourceInclusion(
-    ImagePopup, "popup.js", depends=[slimbox])
+    resource.resource("popup.js", depends=[slimbox])
