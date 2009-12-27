@@ -8,7 +8,7 @@
   <include package="dolmen.app.content" />
   <include package="dolmen.widget.image" />
   <include package="megrok.resource" />
-  <include package="menhir.library.jquery" />
+  <include package="hurry.slimbox" />
 
   <grok:grok package="." />
 

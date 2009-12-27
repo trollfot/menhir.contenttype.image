@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from megrok import resource
-from menhir.library.jquery import slimbox
+from hurry.slimbox import slimbox
 
 
 class ImagePopup(resource.ResourceLibrary):

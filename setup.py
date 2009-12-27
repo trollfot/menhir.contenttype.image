@@ -36,7 +36,7 @@ setup(name = name,
           'dolmen.widget.image',
           'grokcore.view',
           'megrok.resource',
-          'menhir.library.jquery',
+          'hurry.slimbox',
           'setuptools',
       ],
       classifiers = [
