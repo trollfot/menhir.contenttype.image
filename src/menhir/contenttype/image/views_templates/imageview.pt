@@ -6,8 +6,9 @@
        title="Download"
        i18n:translate=""
        i18n:attributes="title"
-       tal:attributes="href view/download_url"
-       >Download</a> &mdash;
+       tal:attributes="href view/download_url;"
+       >Download</a>
+    &mdash;
     <span tal:content="view/size" />
   </p>
   <div class="image">

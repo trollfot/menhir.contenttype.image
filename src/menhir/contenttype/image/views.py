@@ -5,7 +5,7 @@ import dolmen.app.layout as layout
 
 from megrok import resource
 from menhir.contenttype.image import IImage, ImagePopup
-from zope.size import byteDisplay
+from zope.size import ISized
 from zope.traversing.browser.absoluteurl import absoluteURL
 
 
@@ -14,10 +14,10 @@ class ImageView(layout.Index):
     """
     grok.context(IImage)
     resource.include(ImagePopup)
-    
+
     def update(self):
         url = absoluteURL(self.context, self.request)
-        self.size = byteDisplay(self.context.image.getSize())
+        self.size = ISized(self.context.image).sizeForDisplay()
         self.thumbnail = "%s/++thumbnail++image.preview" % url
         self.popup_url = "%s/++thumbnail++image.large" % url
         self.download_url = "%s/++download++image" % url
