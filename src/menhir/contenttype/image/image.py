@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import dolmen.content as content
-import dolmen.app.security.content as security
 
-from grok import name
 from dolmen.file import ImageField
 from dolmen.blob import BlobProperty
+from dolmen.app.content import icon
+from dolmen.app.security.content import CanAddContent
 
 from zope.schema import Text
 from zope.i18nmessageid import MessageFactory
@@ -26,10 +26,10 @@ class IImage(content.IBaseContent):
 class Image(content.Content):
     """A simple image storing its data in a blob.
     """
+    icon("image.png")
     content.name(_(u"Image"))
     content.schema(IImage)
-    content.icon("image.png")
-    content.require(security.CanAddContent)
+    content.require(CanAddContent)
     
     image = BlobProperty(IImage['image'])
   

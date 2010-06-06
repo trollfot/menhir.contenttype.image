@@ -2,13 +2,13 @@
            xmlns:grok="http://namespaces.zope.org/grok">
 
   <include package="dolmen.content" file="meta.zcml" />
-  <include package="dolmen.blob" />
 
-  <include package="dolmen.thumbnailer" />
   <include package="dolmen.app.content" />
+  <include package="dolmen.blob" />
+  <include package="dolmen.thumbnailer" />
   <include package="dolmen.widget.image" />
-  <include package="megrok.resource" />
   <include package="hurry.slimbox" />
+  <include package="megrok.resource" />
 
   <grok:grok package="." />
 
