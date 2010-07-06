@@ -13,9 +13,9 @@ class ImageView(layout.Index):
     """Default view for an image.
     """
     grok.context(IImage)
-    resource.include(ImagePopup)
 
     def update(self):
+        ImagePopup.need()
         url = absoluteURL(self.context, self.request)
         self.size = ISized(self.context.image).sizeForDisplay()
         self.thumbnail = "%s/++thumbnail++image.preview" % url
