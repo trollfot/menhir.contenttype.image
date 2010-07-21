@@ -30,7 +30,7 @@ class MenhirTestLayer(ZCMLFileLayer):
         setUp()
         zope.component.provideAdapter(
             ContainerTraversable, (ISimpleReadContainer,), ITraversable)
-        
+
         zope.component.hooks.setSite(site)
         security.newInteraction(Participation(Principal('zope.mgr')))
 

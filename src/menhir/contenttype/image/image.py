@@ -11,10 +11,10 @@ from menhir.contenttype.image import MF as _
 
 class IImage(content.IBaseContent):
     """Defines a simple object that contains an image.
-    """ 
+    """
     image = ImageField(
-        title = _(u"Image"),
-        required = True)
+        title=_(u"Image"),
+        required=True)
 
 
 class Image(content.Content):
@@ -24,5 +24,5 @@ class Image(content.Content):
     content.name(_(u"Image"))
     content.schema(IImage)
     content.require(CanAddContent)
-    
+
     image = BlobProperty(IImage['image'])
