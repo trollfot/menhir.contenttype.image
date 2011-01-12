@@ -3,7 +3,7 @@
 from os.path import join
 from setuptools import setup, find_packages
 
-version = '0.2'
+version = '0.3'
 name = 'menhir.contenttype.image'
 
 history = open(join('docs', 'HISTORY.txt')).read()
@@ -49,9 +49,9 @@ setup(name = name,
           'dolmen.file',
           'dolmen.thumbnailer',
           'dolmen.widget.image',
+          'fanstatic',
           'grokcore.view',
-          'hurry.slimbox',
-          'megrok.resource',
+          'js.jquery_slimbox',
           'setuptools',
           'zope.i18nmessageid',
           'zope.size',
@@ -65,4 +65,9 @@ setup(name = name,
         'Operating System :: OS Independent',
         'Programming Language :: Python',
       ],
+      entry_points="""
+      # -*- Entry points: -*-
+      [fanstatic.libraries]
+      popup = menhir.contenttype.image.library:ImageLibrary
+      """,
 )

@@ -9,8 +9,6 @@
   <include package="dolmen.blob" />
   <include package="dolmen.thumbnailer" />
   <include package="dolmen.widget.image" />
-  <include package="hurry.slimbox" />
-  <include package="megrok.resource" />
 
   <grok:grok package="." />
 
