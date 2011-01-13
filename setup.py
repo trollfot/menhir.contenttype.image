@@ -11,6 +11,7 @@ readme = open(
     join('src', 'menhir', 'contenttype', 'image', 'README.txt')).read()
 
 tests_require = [
+    'zope.i18n',
     'zope.app.publisher',
     'zope.component',
     'zope.container',
