@@ -4,12 +4,12 @@ import dolmen.content as content
 
 from dolmen.file import ImageField
 from dolmen.blob import BlobProperty
-from dolmen.app.content import icon
+from dolmen.app.content import icon, IDescriptiveSchema
 from dolmen.app.security.content import CanAddContent
 from menhir.contenttype.image import MF as _
 
 
-class IImage(content.IBaseContent):
+class IImage(IDescriptiveSchema):
     """Defines a simple object that contains an image.
     """
     image = ImageField(

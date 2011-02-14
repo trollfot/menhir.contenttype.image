@@ -3,7 +3,7 @@
 from os.path import join
 from setuptools import setup, find_packages
 
-version = '0.3'
+version = '0.4'
 name = 'menhir.contenttype.image'
 
 history = open(join('docs', 'HISTORY.txt')).read()
@@ -12,7 +12,6 @@ readme = open(
 
 tests_require = [
     'zope.i18n',
-    'zope.app.publisher',
     'zope.component',
     'zope.container',
     'zope.principalregistry',
@@ -42,11 +41,11 @@ setup(name = name,
       tests_require = tests_require,
       extras_require = {'test': tests_require},
       install_requires=[
-          'dolmen.app.content',
+          'dolmen.app.content >= 1.0b1',
           'dolmen.app.layout',
           'dolmen.app.security',
           'dolmen.blob',
-          'dolmen.content',
+          'dolmen.content >= 0.7',
           'dolmen.file',
           'dolmen.thumbnailer',
           'dolmen.widget.image',

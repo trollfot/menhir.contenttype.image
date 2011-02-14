@@ -9,12 +9,12 @@ Schema
 ======
 
 The ``menhir.contenttype.image`` `Image` content provides a custom schema,
-extending the `IBaseContent` interface, from ``dolmen.content``::
+extending the `IDescriptiveSchema` interface, from ``dolmen.app.content``::
 
-  >>> from dolmen.content import IBaseContent
+  >>> from dolmen.app.content import IDescriptiveSchema
   >>> from menhir.contenttype.image import IImage
 
-  >>> IImage.isOrExtends(IBaseContent)
+  >>> IImage.isOrExtends(IDescriptiveSchema)
   True
 
 The `IImage` interface describes the image field, that is to store the
